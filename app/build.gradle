@@ -1,9 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions' //新增的
 }
 
 android {
+    android.buildFeatures.viewBinding = true //新增的
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
