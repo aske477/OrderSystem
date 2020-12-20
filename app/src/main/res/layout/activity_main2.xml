@@ -17,16 +17,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/drink_name"
-        android:layout_width="wrap_content"
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="輸入飲料名稱"
-        android:inputType="textPersonName"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="@id/textView3"
-        app:layout_constraintTop_toBottomOf="@id/textView3" />
+        app:layout_constraintTop_toBottomOf="@id/textView3"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -35,8 +32,8 @@
         android:text="甜度"
         android:textSize="10pt"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="@id/drink_name"
-        app:layout_constraintTop_toBottomOf="@id/drink_name" />
+        app:layout_constraintLeft_toLeftOf="@id/gridview"
+        app:layout_constraintTop_toBottomOf="@id/gridview" />
 
     <RadioGroup
         android:id="@+id/suger"
@@ -48,25 +45,26 @@
         <RadioButton
             android:id="@+id/suger1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+
             android:text="無糖" />
 
         <RadioButton
             android:id="@+id/suger2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="少糖" />
 
         <RadioButton
             android:id="@+id/suger3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="半糖" />
 
         <RadioButton
             android:id="@+id/suger4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="正常"
             android:checked="true"/>
     </RadioGroup>
@@ -91,25 +89,25 @@
         <RadioButton
             android:id="@+id/ice1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="去冰" />
 
         <RadioButton
             android:id="@+id/ice2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="微冰" />
 
         <RadioButton
             android:id="@+id/ice3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="少冰" />
 
         <RadioButton
             android:id="@+id/ice4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="正常冰"
             android:checked="true"/>
 

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">OrderSystem</string>
+
+    <integer-array name="resourceList">
+        <item>@drawable/honey</item>
+        <item>@drawable/blacktea</item>
+        <item>@drawable/milktea</item>
+        <item>@drawable/greenteamilk</item>
+        <item>@drawable/orangejuice</item>
+        <item>@drawable/milk</item>
+    </integer-array>
+
+    <array name="drinkresourceList">
+        <item>蜂蜜水</item>
+        <item>大正紅茶</item>
+        <item>紅茶拿鐵</item>
+        <item>抹茶奶綠</item>
+        <item>現榨柳橙</item>
+        <item>新鮮牛奶</item>
+    </array>
+
 </resources>
