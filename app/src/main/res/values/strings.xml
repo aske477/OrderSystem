@@ -19,4 +19,18 @@
         <item>新鮮牛奶</item>
     </array>
 
+    <array name="suger">
+        <item>正常</item>
+        <item>半糖</item>
+        <item>微糖</item>
+        <item>無糖</item>
+    </array>
+
+    <array name="ice">
+        <item>正常</item>
+        <item>少冰</item>
+        <item>微冰</item>
+        <item>去冰</item>
+    </array>
+
 </resources>

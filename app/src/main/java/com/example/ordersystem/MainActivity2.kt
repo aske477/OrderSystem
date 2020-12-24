@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.RadioButton
+import android.widget.Spinner
 import android.widget.Toast
+import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_main2.view.*
 import kotlinx.android.synthetic.main.adapter_vertical.*
 
 
@@ -20,8 +23,9 @@ class MainActivity2 : AppCompatActivity() {
         val item = ArrayList<Item>()
         val array = resources.obtainTypedArray(R.array.resourceList)
         val arrayname = resources.getStringArray(R.array.drinkresourceList)
+        val suger = resources.getStringArray(R.array.suger)
+        val ice = resources.getStringArray(R.array.ice)
         var drinkposition:Int= 0
-
 
 
 
@@ -48,11 +52,14 @@ class MainActivity2 : AppCompatActivity() {
                 Toast.makeText(this,"請選擇飲料", Toast.LENGTH_SHORT).show()
             else{
                 val bundle = Bundle() //宣告bundle
+
                 bundle.putString("name", arrayname[drinkposition])    //放入飲料名稱
-                val sugerchosen = suger.findViewById<RadioButton>(suger.checkedRadioButtonId).text
-                bundle.putString("suger",sugerchosen.toString()) //放入甜度
-                val icechosen = ice.findViewById<RadioButton>(ice.checkedRadioButtonId).text
-                bundle.putString("ice",icechosen.toString())    //放入冰度
+
+                val sugerchosen = findViewById<Spinner>(R.id.suger).selectedItemPosition
+                bundle.putString("suger",suger[sugerchosen]) //放入甜度
+
+                val icechosen = findViewById<Spinner>(R.id.ice).selectedItemPosition
+                bundle.putString("ice", ice[icechosen])    //放入冰度
 
                 val intent = Intent(this,MainActivity::class.java)  //宣告意圖
                 intent.putExtras(bundle)

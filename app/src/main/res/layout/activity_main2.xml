@@ -21,7 +21,7 @@
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintLeft_toLeftOf="@id/textView3"
         app:layout_constraintTop_toBottomOf="@id/textView3"/>
 
@@ -31,43 +31,19 @@
         android:layout_height="wrap_content"
         android:text="甜度"
         android:textSize="10pt"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="@id/gridview"
         app:layout_constraintTop_toBottomOf="@id/gridview" />
 
-    <RadioGroup
+    <Spinner
         android:id="@+id/suger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@id/textView4"
-        app:layout_constraintTop_toBottomOf="@id/textView4">
-
-        <RadioButton
-            android:id="@+id/suger1"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-
-            android:text="無糖" />
-
-        <RadioButton
-            android:id="@+id/suger2"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="少糖" />
-
-        <RadioButton
-            android:id="@+id/suger3"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="半糖" />
-
-        <RadioButton
-            android:id="@+id/suger4"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="正常"
-            android:checked="true"/>
-    </RadioGroup>
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/suger"
+        app:layout_constraintLeft_toRightOf="@id/textView4"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView4"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -75,52 +51,29 @@
         android:layout_height="wrap_content"
         android:text="冰塊"
         android:textSize="10pt"
-        android:layout_marginTop="5dp"
-        app:layout_constraintLeft_toLeftOf="@id/suger"
-        app:layout_constraintTop_toBottomOf="@id/suger" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
 
-    <RadioGroup
+    <Spinner
         android:id="@+id/ice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@id/textView5"
-        app:layout_constraintTop_toBottomOf="@id/textView5">
-
-        <RadioButton
-            android:id="@+id/ice1"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="去冰" />
-
-        <RadioButton
-            android:id="@+id/ice2"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="微冰" />
-
-        <RadioButton
-            android:id="@+id/ice3"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="少冰" />
-
-        <RadioButton
-            android:id="@+id/ice4"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="正常冰"
-            android:checked="true"/>
-
-    </RadioGroup>
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/ice"
+        app:layout_constraintLeft_toRightOf="@id/textView5"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView5"/>
 
     <Button
         android:id="@+id/button_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="送出"
-        android:layout_marginTop="5dp"
-        app:layout_constraintLeft_toLeftOf="@id/ice"
-        app:layout_constraintTop_toBottomOf="@id/ice"/>
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/textView5"
+        app:layout_constraintTop_toBottomOf="@id/textView5"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
