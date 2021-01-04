@@ -1,5 +1,6 @@
 package com.example.ordersystem
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -61,9 +62,14 @@ class MainActivity2 : AppCompatActivity() {
                 val icechosen = findViewById<Spinner>(R.id.ice).selectedItemPosition
                 bundle.putString("ice", ice[icechosen])    //放入冰度
 
+                //setResult將資料回傳
+                setResult(Activity.RESULT_OK,Intent().putExtras(bundle))
+                finish()
+                /*
                 val intent = Intent(this,MainActivity::class.java)  //宣告意圖
                 intent.putExtras(bundle)
                 startActivity(intent)
+                */
             }
         }
     }

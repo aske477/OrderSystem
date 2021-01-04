@@ -50,3 +50,5 @@ class MyAdapter (private val layout: Int, private val data: ArrayList<Item>): Ba
 }
 
 
+
+
