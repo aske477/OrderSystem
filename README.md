@@ -12,7 +12,7 @@
 
 3. 送出後確認畫面，可再做新增、刪除及編輯
 
-![image](https://user-images.githubusercontent.com/37375306/125166110-a6073400-e1cc-11eb-85b3-a6c37a8ce359.png)
+![image](https://user-images.githubusercontent.com/37375306/125166164-ef578380-e1cc-11eb-832d-3e2acc9db524.png)
 
 
 #### 2020/12/9
